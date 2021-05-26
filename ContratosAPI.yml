@@ -1,0 +1,51 @@
+  /clientes/all:
+    get:
+      summary: "GET clientes/all"
+      operationId: "findById"
+      responses:
+        "200":
+          description: "OK"
+---
+  /clientes/novo:
+    post:
+      summary: "POST clientes/novo"
+      operationId: "save"
+      responses:
+        "200":
+          description: "OK"
+---
+  /clientes/total:
+    get:
+      summary: "GET clientes/total"
+      operationId: "count"
+      responses:
+        "200":
+          description: "OK"
+---
+  /clientes/{id}:
+    get:
+      summary: "GET clientes/{id}"
+      operationId: "findById"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        schema:
+          type: "number"
+          format: "int64"
+      responses:
+        "200":
+          description: "OK"
+    delete:
+      summary: "DELETE clientes/{id}"
+      operationId: "deleteById"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        schema:
+          type: "number"
+          format: "int64"
+      responses:
+        "200":
+          description: "OK"

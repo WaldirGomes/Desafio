@@ -1,0 +1,37 @@
+GETs para obter clientes cadastrados com seus respectivos telefones:
+
+http://localhost:8080/clientes/1
+http://localhost:8080/clientes/2
+
+
+POSTs para cadastrar clientes com telefones:
+
+{
+	"nome": "Fulano da Silva",
+	"cpf": "10987654321",
+	"telefones": [
+		{
+			"ddd": "81",
+			"numero": "933333333"
+		},
+		{
+			"ddd": "81",
+			"numero": "944444444"
+		}
+	]
+}
+
+{
+	"nome": "Beltrano dos Santos",
+	"cpf": "12345678910",
+	"telefones": [
+		{
+			"ddd": "81",
+			"numero": "911111111"
+		},
+		{
+			"ddd": "81",
+			"numero": "922222222"
+		}
+	]
+}
